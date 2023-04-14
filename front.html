@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Document</title>
+    <style>
+       table{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: bisque;
+        border-collapse: collapse;
+         width: 50%;
+        height: 50%;
+        text-align: center;
+       }
+       tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+       tr {
+         border-bottom: 1px solid #d67f7f;
+         z-index: 10;
+       }
+       tr:hover {background-color: #D6EEEE;
+        transform: scale(1S);
+        z-index: 20;
+    }
+    body{
+        background-color: #d67f7f;
+    }
+    </style>
+</head>
+<body>
+    <li>
+    </li>
+  <table>
+    <caption>User Detail/caption>
+    <tr>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Button</th>
+    </tr>
+    <tr id="1">
+      <td class="name">Mohit</td>
+      <td class="mobile">9111929</td>
+      <td class="address">458A</td>
+      <td class="city">indore</td>
+      <td><button onclick="my(4,5)">Add</button></td>
+      <script src="../javascript/hello.js"></script> 
+    </tr>
+ 
+    <tr id="1">
+      <td class="name">Mohit</td>
+      <td class="mobile">9111929</td>
+      <td class="address">458A</td>
+      <td class="city">indore</td>
+      <td><button onclick="Add(id)">Add</button></td>
+    </tr>
+    <tr id="2">
+      <td class="name">Mohit</td>
+      <td class="mobile">9111929</td>
+      <td class="address">458A</td>
+      <td class="city">indore</td>
+      <td><button onclick="Add(2)">Add</button></td>
+      </tr>
+    <tr id="3">
+      <td class="name">Mohit</td>
+      <td class="mobile">9111929</td>
+      <td class="address">458A</td>
+      <td class="city">indore</td>
+      <td><button onclick="Add(4)">Add</button></td>
+      </tr>
+      <tr id="4">
+        <td class="name">Mohit</td>
+        <td class="mobile">9111929</td>
+        <td class="address">458A</td>
+        <td class="city">indore</td>
+        <td><button onclick="Add(5)">Add</button></td>
+      </tr>
+  </table>
+</body>
+</html>
